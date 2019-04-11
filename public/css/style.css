@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 1.7;
+    color: #777777;
+    padding: 3rem;
+    box-sizing: border-box;
+    position: relative;
+    height: 100vh;
+    background: rgb(246,248,249); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 30%, rgba(215,222,227,1) 59%, rgba(245,247,249,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 30%,rgba(215,222,227,1) 59%,rgba(245,247,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 30%,rgba(215,222,227,1) 59%,rgba(245,247,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.container {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.clock {
+    padding: 3rem 0;
+}
