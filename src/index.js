@@ -1,3 +1,5 @@
+import { brotliDecompressSync } from "zlib";
+
 // // import Unsplash from 'unsplash-js';
 //  import { accessKey, secretKey } from './config'
 
@@ -5,12 +7,15 @@
 // //     applicationId: accessKey,
 // //     secret: secretKey
 // //   });
-  
+
 function getPic() {
     fetch('https://api.unsplash.com/photos/random/?client_id=90ea599df4e990256ce1fb140eabc195c549b00ada1f69e0a76b888990749ef1')
     .then((res) => res.json())
     .then((data) => {
-        console.log(data)
+    let image = data.urls.full
+        // console.log(data)
+        document.querySelector('.body').style.backgroundImage = `url(${image})`
+      
     })
     .catch((err) => console.log(err))
 } 
